@@ -84,7 +84,7 @@ app.get('/callback', async (req, res) => {
     
     const { access_token, refresh_token } = response.data;
     console.log(access_token,refresh_token);
-    res.redirect('http://192.168.223.179:3000/callback/success?access_token='+access_token+'&refresh_token='+refresh_token);
+    res.redirect('https://spotify-oauth-pi.vercel.app/callback/success?access_token='+access_token+'&refresh_token='+refresh_token);
     // res.redirect('http://localhost:3000/callback/success')
     
 
